@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Kela reimbursement</title>
+<style type="text/css">
+label {
+	display: block;
+	width: 10em;
+	float: left;
+}
+</style>
+
+<script src="doctorvisit.js">
+</script>
+</head>
+<body>
+	<h3>Kela reimbursement</h3>
+
+	<form>
+		<p>
+			<label>Length of the visit: </label> <input type="text" name="length" id="length"
+				size="3"> min
+		</p>
+		<p>
+			<label>Doctor’s Fee </label> <input type="text" name="doctorsFee"
+				id="doctorsFee" size="8"> euros
+		</p>
+		<p>
+			<input type="button" id="submit" value="Calculate" onClick="calculate()">
+		</p>
+	</form>
+
+	
+	<div id="answer"></div>
+</body>
+</html>
+
